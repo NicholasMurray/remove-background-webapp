@@ -4,9 +4,23 @@ A simple flask app to remove the background of an image with [Rembg](https://git
 
 ## Run it locally
 
+### Install dependencies and run
+
 ```
 pip install -r requirements.txt
-python app.py
+python3 app.py
+```
+
+### Local URLs
+
+```
+http://localhost:5100/
+```
+
+or
+
+```
+http://127.0.0.1:5100/
 ```
 
 ## Run it with docker compose
@@ -34,10 +48,10 @@ docker build -t removebg .
 ### Run docker
 
 ```
-docker run -p 6006:6006 removebg
+docker run -p 8000:5100 removebg
 ```
 
-## URL
+## Docker URLs
 
 ```
 http://localhost:8000/
